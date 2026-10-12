@@ -1,0 +1,12 @@
+﻿id,value,unit,year,source,locator,scope
+drug_market,430.8,milyar cari TL,2025,IEIS2026a,s.6,Hastane+eczane; üretici fiyat düzeyi; net SGK harcaması değildir
+drug_volume,2.65,milyar kutu,2025,IEIS2026a,s.6,Kutu; DDD veya hasta sayısı değildir
+biotech_market,88.1,milyar cari TL,2025,IEIS2026b,s.1,Biyoteknolojik ilaç pazarı
+biosimilar_value_share,9.3,yüzde,2025,IEIS2026b,s.2,Tüm biyoteknolojik pazardaki değer payı
+biosimilar_pack_share,35.5,yüzde,2025,IEIS2026b,s.2,Kutu payı; erişilebilir pazar penetrasyonu değildir
+biosimilar_domestic_brands,11.0,marka,2025,IEIS2026b,Tablo 1,İmal biyobenzer; teknoloji mülkiyeti göstermez
+drug_facilities,111.0,tesis,2025,IEIS2026a,s.33,102 ilaç ve 9 radyofarmasötik tesis
+api_facilities,15.0,tesis,2025,IEIS2026a,s.33,API kendine yeterlilik oranı değildir
+rd_employees,2640.0,yaklaşık kişi,2025,IEIS2026a,s.32,Ar-Ge merkezi çalışanı; ülke genelindeki ilaç araştırmacıları değildir
+industry_employees,50205.0,kişi,2024,IEIS2026a,s.35,2025 raporunda 2024 istihdamı
+gerd_gdp,1.46,yüzde,2024,TUIK2025,bülten 53932,Ulusal tüm sektörler; ilaç Ar-Ge yoğunluğu değildir

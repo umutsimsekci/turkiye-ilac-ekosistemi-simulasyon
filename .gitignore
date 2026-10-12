@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+.ipynb_checkpoints/
+.streamlit/secrets.toml
+output/playwright/
+build/
+dist/
+.env
+*.log
+results/interactive/
+results/animations/
+results/data/*_draws.csv
+results/run_metadata.json

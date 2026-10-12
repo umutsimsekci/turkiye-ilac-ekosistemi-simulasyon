@@ -1,0 +1,53 @@
+{
+  "version": "1.0.0",
+  "seed": 20260922,
+  "draws": 20000,
+  "units": "Sabit 2025 TL; toplam bütçe/Ar-Ge/portföy için milyar TL",
+  "scope": "Örnek varsayımlar; ulusal veya klinik etki tahmini değil",
+  "budget": {
+    "total_bn": -1.6799999999999995,
+    "pv_bn": -1.3313139332318107,
+    "threshold": 0.145,
+    "pv_threshold": 0.15690918024936765
+  },
+  "cohort": {
+    "delta_cost": 330596.28255539224,
+    "delta_qaly": 0.6728695284956459,
+    "icer": 491323.01070984156
+  },
+  "research": {
+    "success": 0.12284999999999999,
+    "reach": [
+      1.0,
+      0.65,
+      0.22749999999999998,
+      0.13649999999999998
+    ],
+    "expected_cost_bn": 0.5707987969950262,
+    "expected_cash_bn": 1.4085911727367515,
+    "rnpv_bn": 0.8377923757417253,
+    "break_even_cash_bn": 1.6209069261339224
+  },
+  "portfolio": {
+    "selected": "G;B;N1;P",
+    "spent_bn": 7.4,
+    "enmb_bn": 3.48513,
+    "feasible": true,
+    "platform": 1
+  },
+  "paper_psa": {
+    "budget_saving_probability": 0.6427,
+    "budget_quantiles_bn": [
+      -4.3028577596177575,
+      -0.6478170066040934,
+      1.8402211018395285
+    ],
+    "probability_at_500k": 0.50325,
+    "evpi_at_500k": 50470.14838667045
+  },
+  "process_checks": {
+    "micro_max_state_difference": 0.010571478697210757,
+    "mean_approvals": 12.2568,
+    "analytic_expected_approvals": 12.284999999999998
+  }
+}

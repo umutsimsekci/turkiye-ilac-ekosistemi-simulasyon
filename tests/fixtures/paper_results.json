@@ -1,0 +1,127 @@
+{
+  "seed": 20260922,
+  "draws": 20000,
+  "units": "2025 sabit TL; varsayımsal senaryolar",
+  "macro": {
+    "value_volume_gap_2025": 37.4,
+    "import_domestic_mean_pack_value_ratio": 10.376253509827517,
+    "trade_deficit_2025": 4.79,
+    "rd_centres_change_2023_2025": -6.976744186046513
+  },
+  "bia": {
+    "base": {
+      "n": 100000,
+      "price": 100000.0,
+      "discount": 0.25,
+      "monitor": 2000.0,
+      "fixed": 1.5,
+      "annual": 0.1,
+      "r": 0.03,
+      "u0": [
+        0.1,
+        0.15,
+        0.2,
+        0.25,
+        0.3
+      ],
+      "u1": [
+        0.1,
+        0.35,
+        0.6,
+        0.75,
+        0.8
+      ]
+    },
+    "undiscounted_bn": -1.6799999999999997,
+    "pv_bn": -1.3313139332318107,
+    "gross_drug_savings_bn": 4.0,
+    "monitor_bn": 0.32,
+    "break_even_discount_undiscounted": 0.145,
+    "break_even_discount_pv": 0.15690918024936765,
+    "psa_saving_probability": 0.6427,
+    "psa_interval_bn": [
+      -4.3028577596177575,
+      -0.6478170066040934,
+      1.8402211018395285
+    ],
+    "psa_mean_bn": -0.855431834254006
+  },
+  "cua": {
+    "cost_standard": 817558.6652129177,
+    "cost_innovative": 1148154.9477683099,
+    "qaly_standard": 4.610548291908176,
+    "qaly_innovative": 5.283417820403822,
+    "delta_cost": 330596.2825553921,
+    "delta_qaly": 0.6728695284956459,
+    "icer": 491323.0107098414,
+    "prob_at_500k": 0.50325,
+    "evpi_at_500k": 50470.14838668794,
+    "mean_nmb_500k": 4904.305261384562,
+    "psa_delta_cost_interval": [
+      172889.00324644148,
+      326895.55665880244,
+      521087.7056336408
+    ],
+    "psa_delta_qaly_interval": [
+      -0.046855008334330595,
+      0.6706251703416779,
+      1.4128108766093292
+    ]
+  },
+  "rd": {
+    "approval_probability": 0.12284999999999999,
+    "expected_discounted_cost_bn": 0.5707987969950262,
+    "rnpv_bn": 0.8377923757417253,
+    "break_even_annual_cash_bn": 1.6209069261339224,
+    "n_for_80pct_at_least_one_independent": 13,
+    "success_10_independent": 0.7303883358071035,
+    "success_10_rho_015": 0.5422735262693619
+  },
+  "portfolio": [
+    {
+      "budget_bn": 8,
+      "lambda_tl_qaly": 1000000.0,
+      "spent_bn": 7.4,
+      "enmb_bn": 3.48513,
+      "selected": "G;B;N1;P",
+      "policy_constraint": false,
+      "stress": false
+    },
+    {
+      "budget_bn": 8,
+      "lambda_tl_qaly": 1000000.0,
+      "spent_bn": 7.4,
+      "enmb_bn": 3.48513,
+      "selected": "G;B;N1;P",
+      "policy_constraint": true,
+      "stress": false
+    },
+    {
+      "budget_bn": 8,
+      "lambda_tl_qaly": 1000000.0,
+      "spent_bn": 1.0,
+      "enmb_bn": 0.10249999999999981,
+      "selected": "G",
+      "policy_constraint": false,
+      "stress": true
+    },
+    {
+      "budget_bn": 8,
+      "lambda_tl_qaly": 500000,
+      "spent_bn": 3.2,
+      "enmb_bn": 1.75,
+      "selected": "G;B",
+      "policy_constraint": false,
+      "stress": false
+    },
+    {
+      "budget_bn": 8,
+      "lambda_tl_qaly": 1500000,
+      "spent_bn": 8.0,
+      "enmb_bn": 10.670905000000001,
+      "selected": "R;N1;N2;P",
+      "policy_constraint": false,
+      "stress": false
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+﻿id,name,investment_bn,probability,qaly,health_cost_bn,platform_eligible,platform_required
+G,Kritik eşdeğer,1.0,0.9,1000,-1.5,False,False
+B,Biyobenzer,2.2,0.7,1000,-4.0,False,False
+R,Yeniden konumlandırma,1.3,0.45,6000,1.5,True,False
+N1,Faz I adayı,3.0,0.12285,50000,12.0,True,True
+N2,Faz II adayı,2.5,0.189,26000,8.0,True,True

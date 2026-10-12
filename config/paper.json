@@ -1,0 +1,12 @@
+{
+  "seed": 20260922,
+  "draws": 20000,
+  "price_year": 2025,
+  "assumption_status": "Illustrative, not calibrated to a Turkish product or disease",
+  "budget": {"population":100000,"price":100000,"discount":0.25,"monitoring":2000,"capex_bn":1.5,"annual_bn":0.1,"rate":0.03,"usual":[0.1,0.15,0.2,0.25,0.3],"programme":[0.1,0.35,0.6,0.75,0.8]},
+  "cohort": {"progression":0.18,"death_stable":0.03,"death_progressed":0.25,"relative_rate":0.72,"price_standard":90000,"price_candidate":140000,"care_stable":20000,"care_progressed":140000,"utility_stable":0.8,"utility_progressed":0.5,"horizon":20,"cycle":1,"discount":0.03},
+  "research": {"probabilities":[0.65,0.35,0.6,0.9],"costs_bn":[0.15,0.45,1.2,0.15],"years":[0,2,5,8],"rate":0.1,"launch":9,"cash_years":10,"annual_cash_bn":4},
+  "portfolio": {"budget":8,"threshold":1000000,"platform_cost":1.2,"platform_gain":0.1},
+  "process_simulation": {"patients":10000,"candidates":100,"replicates":10000,"seed":20261012},
+  "psa_scope": "Historical paper priors; deterministic configuration edits do not refit these priors"
+}

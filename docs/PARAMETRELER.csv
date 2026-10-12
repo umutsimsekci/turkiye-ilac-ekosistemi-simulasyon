@@ -1,0 +1,35 @@
+﻿model,parameter,base,unit,paper_psa_distribution,evidence_status
+budget,population,100000,kişi,Sabit,Örnek varsayım; gözlemsel tahmin değil
+budget,price,100000,sabit 2025 TL / kişi-yıl,Sabit,Örnek varsayım; gözlemsel tahmin değil
+budget,discount,0.25,boyutsuz,"Uniform(0.10,0.40); Gaussian copula latent rho=0.35 with uptake scale",Örnek varsayım; gözlemsel tahmin değil
+budget,monitoring,2000,sabit 2025 TL / kişi-yıl,"Triangular(1000,2000,4000)",Örnek varsayım; gözlemsel tahmin değil
+budget,capex_bn,1.5,milyar sabit 2025 TL,"Triangular(0.75,1.5,3.0)",Örnek varsayım; gözlemsel tahmin değil
+budget,annual_bn,0.1,milyar sabit 2025 TL,"Triangular(0.05,0.1,0.2)",Örnek varsayım; gözlemsel tahmin değil
+budget,rate,0.03,yıllık oran,Sabit,Örnek varsayım; gözlemsel tahmin değil
+budget,usual,"[0.1, 0.15, 0.2, 0.25, 0.3]",boyutsuz,Sabit,Örnek varsayım; gözlemsel tahmin değil
+budget,programme,"[0.1, 0.35, 0.6, 0.75, 0.8]",boyutsuz,Sabit,Örnek varsayım; gözlemsel tahmin değil
+cohort,progression,0.18,yıl^-1,"Gamma(shape=100,scale=0.18/100)",Örnek varsayım; gözlemsel tahmin değil
+cohort,death_stable,0.03,yıl^-1,"Gamma(shape=100,scale=0.03/100)",Örnek varsayım; gözlemsel tahmin değil
+cohort,death_progressed,0.25,yıl^-1,"Gamma(shape=100,scale=0.25/100)",Örnek varsayım; gözlemsel tahmin değil
+cohort,relative_rate,0.72,boyutsuz,"Lognormal(log_median=log(0.72),log_sd=0.18)",Örnek varsayım; gözlemsel tahmin değil
+cohort,price_standard,90000,sabit 2025 TL / kişi-yıl,"Gamma(shape=100,scale=90000/100)",Örnek varsayım; gözlemsel tahmin değil
+cohort,price_candidate,140000,sabit 2025 TL / kişi-yıl,"Sampled standard price + Gamma(shape=25,scale=50000/25)",Örnek varsayım; gözlemsel tahmin değil
+cohort,care_stable,20000,sabit 2025 TL / kişi-yıl,"Gamma(shape=25,scale=20000/25)",Örnek varsayım; gözlemsel tahmin değil
+cohort,care_progressed,140000,sabit 2025 TL / kişi-yıl,"Gamma(shape=25,scale=140000/25)",Örnek varsayım; gözlemsel tahmin değil
+cohort,utility_stable,0.8,boyutsuz,"Beta(80,20)",Örnek varsayım; gözlemsel tahmin değil
+cohort,utility_progressed,0.5,boyutsuz,"Sampled stable utility * Beta(62.5,37.5)",Örnek varsayım; gözlemsel tahmin değil
+cohort,horizon,20,yıl,Sabit,Örnek varsayım; gözlemsel tahmin değil
+cohort,cycle,1,yıl,Sabit,Örnek varsayım; gözlemsel tahmin değil
+cohort,discount,0.03,yıllık oran,Sabit,Örnek varsayım; gözlemsel tahmin değil
+research,probabilities,"[0.65, 0.35, 0.6, 0.9]",boyutsuz,Sabit,Örnek varsayım; gözlemsel tahmin değil
+research,costs_bn,"[0.15, 0.45, 1.2, 0.15]",milyar sabit 2025 TL,Sabit,Örnek varsayım; gözlemsel tahmin değil
+research,years,"[0, 2, 5, 8]",yıl,Sabit,Örnek varsayım; gözlemsel tahmin değil
+research,rate,0.1,yıllık oran,Sabit,Örnek varsayım; gözlemsel tahmin değil
+research,launch,9,yıl,Sabit,Örnek varsayım; gözlemsel tahmin değil
+research,cash_years,10,yıl,Sabit,Örnek varsayım; gözlemsel tahmin değil
+research,annual_cash_bn,4,milyar sabit 2025 TL,Sabit,Örnek varsayım; gözlemsel tahmin değil
+portfolio,budget,8,milyar sabit 2025 TL,Sabit,Örnek varsayım; gözlemsel tahmin değil
+portfolio,threshold,1000000,sabit 2025 TL/QALY,Sabit,Örnek varsayım; gözlemsel tahmin değil
+portfolio,platform_cost,1.2,milyar sabit 2025 TL,Sabit,Örnek varsayım; gözlemsel tahmin değil
+portfolio,platform_gain,0.1,boyutsuz,Sabit,Örnek varsayım; gözlemsel tahmin değil
+budget,uptake_scale,1,boyutsuz,"Uniform(0.5,1.2); copula latent rho=0.35",Örnek varsayım
