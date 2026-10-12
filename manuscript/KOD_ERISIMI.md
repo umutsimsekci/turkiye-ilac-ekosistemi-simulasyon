@@ -1,0 +1,9 @@
+# Kod erişimi ve sürüm
+
+Yeniden üretilebilir hesaplama kodu, parametre dosyaları, Jupyter defteri ve şekil verileri PHARMACOECOSIM v1.0.0 sürümünde saklandı. Depo: https://github.com/umutsimsekci/turkiye-ilac-ekosistemi-simulasyon. Hesaplama sürümü kimliği: 33d88bf72326d19aa1a0c527b9d55f810f0cfcec. Depo yazar incelemesi sırasında özeldir; henüz açık erişimli değildir. Veri ve literatür kesimi 22 Eylül 2026, yazılım genişletmesi 12 Ekim 2026 tarihindedir. Matematiksel simülasyon ve yazılım eki, model-kod eşleşmesini ve yeniden çalıştırma adımlarını içerir.
+
+Hesaplar Python 3.12 ile ayrı bütçe, kohort, Ar-Ge ve portföy modüllerinde uygulandı. NumPy rassal sayı üretimi, SciPy geçiş matrisinin üssü, pandas tablo işlemleri, Matplotlib yayın şekilleri, Plotly etkileşimli grafikler ve Streamlit senaryo arayüzü için kullanıldı. Ana analizde 20.000 parametre çekilişi ve 20260922 tohumu korundu. Girdi dosyaları, dağılımlar ve birimler yazılım paketinde açıkça tanımlandı.
+
+Model davranışını görünür kılmak için sabit geçiş matrisi altında 10.000 sanal kişinin 20 yıllık durumları örneklendi. Ayrıca 100 araştırma adayının dört aşamadan geçişi, 10.000 bağımsız tekrarda ardışık binomial çekilişlerle simüle edildi. Her iki süreç için 20261012 tohumu kullanıldı. Bu birinci düzey rastlantısallık analizleri, parametre belirsizliği analizinden ayrıdır; yeni klinik gözlem veya ulusal etki tahmini üretmez. Ek Şekiller S1–S6 model dinamiklerini, gecikmeyi, ortak riski ve karar belirsizliğini gösterir.
+
+Yazılım doğrulamasında makalenin referans sayıları, maliyet özdeşlikleri, durum olasılıklarının korunması, emici ölüm durumu, eşit geçiş hızlarının limiti, proje bütçe koşulları ve arayüzün yeniden hesaplaması test edildi. Etkileşimli ekrandaki deterministik parametre değişiklikleri, makalenin sabit olasılıksal dağılımlarını yeniden kalibre etmez.

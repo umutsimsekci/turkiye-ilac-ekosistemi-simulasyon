@@ -25,6 +25,8 @@ Linux/macOS üzerinde `.venv\Scripts\python` yerine `.venv/bin/python` kullanın
 - **Öğrenme ve yeniden çalıştırma:** `notebooks/01_model_simulasyonlari.ipynb` dört modeli adım adım açıklar.
 - **Test:** `python -m pytest -q`.
 
+Windows'ta kurulum tamamlandıktan sonra `Simulasyonu_Ac.cmd` dosyası uygulamayı başlatır. Tamamlanan doğrulamalar `docs/DOGRULAMA.md` içinde; makale ve PDF bağlantıları `manuscript/README.md` içindedir.
+
 PSA, makale sonuçlarıyla birebir karşılaştırma amacıyla sabit makale dağılımlarını kullanır. CLI'da veya ekranda deterministik parametrelerin değiştirilmesi bu dağılımları yeniden kalibre etmez. Varsayılan dışı dağılımlar için `probabilistic` fonksiyonları ve parametre belgesi birlikte değiştirilmelidir.
 
 ## Beklenen temel sonuçlar
