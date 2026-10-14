@@ -3,7 +3,9 @@ from pathlib import Path
 import nbformat as nbf
 
 cells=[
-nbf.v4.new_markdown_cell('# İlaç ekosistemi: modelden simülasyona\n\nBu defterdeki bütün klinik ve ekonomik model girdileri varsayımsaldır. Amaç, makalenin matematiğini çalıştırmak ve parametre değişikliklerinin sonuçlarını incelemektir. Önce depo kökünde `python -m pip install -e ".[app,dev]"` çalıştırın. Python 3.12 çekirdeğini seçin.'),
+nbf.v4.new_markdown_cell('# İlaç ekosistemi: modelden simülasyona\n\nBu defterdeki bütün klinik ve ekonomik model girdileri varsayımsaldır. Amaç, makalenin matematiğini çalıştırmak ve parametre değişikliklerinin sonuçlarını incelemektir. Önce depo kökünde `python -m pip install -e ".[app,dev]"` çalıştırın. Python 3.12 çekirdeğini seçin. Güncel çalışma yazarı: Umut Şimşekçi. Kod sürümü: v1.0.1; hesaplama denklemleri v1.0.0 ile aynıdır. Kod hücreleri MIT, projeye ait açıklamalar CC BY 4.0 lisanslıdır. ChatGPT/Codex kod ve açıklamaların hazırlanmasında kullanılmıştır.'),
+nbf.v4.new_markdown_cell('### Çalıştırma ortamı\n\nAşağıdaki hücre, paket kurulu değilse v1.0.1 kodunu GitHub üzerinden kurar. İlk kurulum internet gerektirir; hesaplama sonrasında yerel olarak yürütülür. Depo kökünden yapılan yerel editable kurulum varsa yeniden indirme yapılmaz. Bu defter gerçek hasta verisi içermez.'),
+nbf.v4.new_code_cell('import importlib.util, subprocess, sys\nif importlib.util.find_spec("pharmacoecosim") is None:\n    subprocess.check_call([sys.executable, "-m", "pip", "install", "git+https://github.com/umutsimsekci/turkiye-ilac-ekosistemi-simulasyon.git@v1.0.1"])'),
 nbf.v4.new_code_cell('from dataclasses import replace\nimport numpy as np\nimport pandas as pd\nimport matplotlib.pyplot as plt\nfrom pharmacoecosim import budget, cohort, research, portfolio\n%matplotlib inline'),
 nbf.v4.new_markdown_cell('## 1. Bütçe\n\nEk maliyet = yatırım + işletme + izlem − ilaç tasarrufu. Negatif sonuç tasarruf demektir. Gecikme kullanım artışını erteler; başlangıç gideri ödenir.'),
 nbf.v4.new_code_cell("base=budget.evaluate()\nprint('Toplam ek maliyet (milyar TL):',base['total_bn'])\nprint('İki yıl gecikme:',budget.evaluate(delay=2)['total_bn'])\nbase['table']"),

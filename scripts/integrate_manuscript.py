@@ -1,4 +1,6 @@
-"""Preserve the September manuscript and build a linked revision and supplement.
+"""Historical 12 October 2026 draft builder; not a journal submission formatter.
+
+Preserve the September manuscript and build a linked revision and supplement.
 
 Requires python-docx. Source file and output paths are relative to this repository.
 The validated calculation release is pinned independently of this editorial commit.

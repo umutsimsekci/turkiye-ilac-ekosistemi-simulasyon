@@ -4,8 +4,10 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pharmacoecosim"
-version = "1.0.0"
+version = "1.0.1"
 description = "Reproducible illustrative pharmacoeconomic simulations for Türkiye's pharmaceutical ecosystem"
+authors = [{name = "Umut Şimşekçi"}]
+license = "MIT"
 requires-python = ">=3.11"
 dependencies = ["numpy>=2.0,<3", "scipy>=1.14,<2", "pandas>=2.2,<4", "matplotlib>=3.9,<4", "plotly>=6,<8", "pillow>=10"]
 

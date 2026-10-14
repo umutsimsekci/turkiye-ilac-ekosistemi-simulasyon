@@ -14,3 +14,5 @@ results/interactive/
 results/animations/
 results/data/*_draws.csv
 results/run_metadata.json
+
+.release_work/

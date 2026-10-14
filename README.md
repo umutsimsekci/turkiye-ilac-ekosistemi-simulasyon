@@ -1,10 +1,19 @@
 # Türkiye ilaç ekosistemi simülasyonları
 
-Makalenin bütçe etkisi, maliyet-yararlılık, Ar-Ge ve portföy hesaplarını yeniden üreten Python araştırma paketi. **Depo özeldir; henüz açık erişimli bir kod yayını değildir.** Makale yazarlığı: Umut Şimşekçi ve Yıldırım Cesaretli, SBÜ Gülhane Tıp Fakültesi, Tıbbi Farmakoloji ABD. Bildirilen finansal destek ve çıkar çatışması yoktur.
+Makalenin bütçe etkisi, maliyet-yararlılık, Ar-Ge ve portföy hesaplarını yeniden üreten Python araştırma paketi. **Kod, Jupyter defteri, parametreler ve şekil verileri açık erişime sunulmuştur.** Güncel çalışma yazarı: Umut Şimşekçi, SBÜ Gülhane Tıp Fakültesi, Tıbbi Farmakoloji ABD. Bildirilen finansal destek ve çıkar çatışması yoktur.
 
 Karar modelleri **varsayımsal** ve hastalık/ürün düzeyinde kalibre edilmemiştir. Açık kaynaklardan derlenen gözlem göstergeleri `data/observed/` içinde ayrı tutulur. Simülasyon çıktıları ulusal tasarruf, klinik etkililik veya yatırım başarısının kanıtı değildir.
 
 ![Kohort dinamikleri](results/figures/S1_kohort_dinamikleri.png)
+
+## Açık erişim ve Jupyter
+
+- [Sabit sürüm v1.0.1](https://github.com/umutsimsekci/turkiye-ilac-ekosistemi-simulasyon/tree/v1.0.1)
+- [Jupyter defterini GitHub üzerinde okuyun](https://github.com/umutsimsekci/turkiye-ilac-ekosistemi-simulasyon/blob/v1.0.1/notebooks/01_model_simulasyonlari.ipynb)
+- [Google Colab ile açın](https://colab.research.google.com/github/umutsimsekci/turkiye-ilac-ekosistemi-simulasyon/blob/v1.0.1/notebooks/01_model_simulasyonlari.ipynb): kendi hesabınızda çalıştırılır; ilk hücre gerekli paketi yükler. Yerel Jupyter için aşağıdaki kurulumu kullanın.
+- [Kaynak kodu ZIP olarak indirin](https://github.com/umutsimsekci/turkiye-ilac-ekosistemi-simulasyon/archive/refs/tags/v1.0.1.zip)
+
+v1.0.1 erişim, atıf ve belgeleme sürümüdür; hesaplama denklemleri, örnek parametreler ve v1.0.0 sonuçları değiştirilmemiştir. Depoda daha önce üretilmiş çıktılardaki 1.0.0 sürüm bilgisi bu hesaplama kökenini korur. `manuscript/` içindeki Word/PDF dosyaları 12 Ekim 2026 tarihli **eski çalışma taslaklarıdır**; güncel dergi gönderim paketi veya kabul edilmiş yayın değildir. Eski taslaklardaki özel erişim ifadeleri tarihsel durumu gösterir.
 
 ## Başlangıç
 
@@ -63,4 +72,10 @@ PSA, makale sonuçlarıyla birebir karşılaştırma amacıyla sabit makale dağ
 
 Büyük çekiliş CSV'leri, çevrimdışı HTML ve GIF tam komutla yeniden oluşturulur; Git geçmişine eklenmez. Test edilmiş doğrudan bağımlılıklar `requirements-tested.txt`, tam yerel ortam `docs/environment.txt` içindedir. GitHub Actions her kod değişiminde hesap ve arayüz testlerini çalıştıracak biçimde yapılandırılmıştır. İşletim sistemi ve kütüphane farkları nedeniyle kayan nokta toleransları kullanılır.
 
-Yayın aşamasında depo görünürlüğü ve yeniden kullanım lisansı ayrıca kararlaştırılacaktır. Şu anda açık kaynak lisansı atanmadı. Dergiye gönderim yapılmadı.
+## Lisans, atıf ve yapay zekâ kullanımı
+
+Yazılım ve Jupyter kod hücreleri [MIT lisansı](LICENSE) ile paylaşılır. Projeye ait açıklama metinleri ve üretilen şekiller [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) ile paylaşılır; kaynak ve sürüm belirtilmelidir. Üçüncü taraflardan aktarılan sınırlı gözlem göstergelerinin kaynak hakları sahiplerinde kalır; bu lisanslar dış kaynak raporlarını kapsamaz. Raporların PDF kopyaları depoda dağıtılmaz. Ayrıntılar: [yeniden kullanım kapsamı](docs/YENIDEN_KULLANIM.md).
+
+OpenAI ChatGPT/Codex, çalışma taslaklarının, kodun, Jupyter açıklamalarının ve görsellerin hazırlanması/düzenlenmesinde kullanıldı. Yapay zekâ kullanımı yalnızca dil düzeltmesiyle sınırlı değildir. Otomatik testler ve yeniden çalıştırma yazılımın iç tutarlılığını değerlendirir; bilimsel dış doğrulama veya yazarın onayı yerine geçmez. Bilimsel değerlendirme ve yayın beyanlarının sorumluluğu yazardadır. Depodaki taslaklar herhangi bir derginin yapay zekâ politikasına uygunluk onayı taşımaz.
+
+Güncel yazarlık bilgisi `CITATION.cff` içindedir. Git geçmişi önceki sürümlerin değişiklik kaydı olarak korunur.
